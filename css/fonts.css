@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jockeyone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/jockeyone-regular-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hattori Hanzo';
+    src: url('../fonts/hattori_hanzo-webfont.woff2') format('woff2'),
+         url('../fonts/hattori_hanzo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Hattori Hanzo italic';
+    src: url('../fonts/hattori_hanzo_italic-webfont.woff2') format('woff2'),
+         url('../fonts/hattori_hanzo_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
