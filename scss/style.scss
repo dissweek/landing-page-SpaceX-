@@ -15,24 +15,29 @@
     border-bottom: 1px solid #b2b3b3;
   }
 
-  &__logo {
-    margin-right: 137px;
+  &__logo-img {
+    height: 24px;;
   }
 
   &__burger-menu {
-    width: 32px;
-    height: 32px;
-    background-color: #000000;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff00;
     display: none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    gap: 6px;
+    border: none;
   }
+  
+
 
   &__burger-menu--span {
     width: 80%;
-    height: 4px;
-    background-color: #ffffff;
+    height: 2px;
+    background-color: #b5b6b6;
   }
 
   &__wrapper-container {
@@ -928,3 +933,5 @@ footer {
     right: -15px;
   }
 }
+
+@import "adaptive";
