@@ -881,15 +881,15 @@ footer {
     max-width: -moz-min-content;
     max-width: min-content;
   }
-  .falcon__btn-cnt {
-    margin: 50px 0 0;
-  }
   .mission__container {
     flex-wrap: wrap;
     justify-content: center;
   }
   .mission__falcon-img {
     width: 105%;
+  }
+  .falcon__btn-cnt {
+    margin: 50px 0 0;
   }
   .falcon__info-container {
     flex-direction: column;
@@ -949,12 +949,6 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .gallery__img-low2,
-  .gallery__img-low1,
-  .gallery__img-mid1,
-  .gallery__img-mid2 {
-    display: none;
-  }
   .falcon-9__text-container {
     width: 70%;
   }
@@ -971,6 +965,9 @@ footer {
   }
   .falcon__a-container {
     margin: 80px 40px 40px 40px;
+  }
+  .gallery__img-low2, .gallery__img-low1, .gallery__img-mid1, .gallery__img-mid2 {
+    display: none;
   }
   .gallery__elm {
     width: 55px;
@@ -1004,9 +1001,6 @@ footer {
   }
 }
 @media (max-width: 425px) {
-  .header__list {
-    gap: 18px;
-  }
   .falcon-9__title {
     font-size: 50px;
   }

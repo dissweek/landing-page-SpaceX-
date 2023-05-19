@@ -7,7 +7,6 @@
 }
 
 @media (max-width: 992px) {
-
   .header {
     &__wrapper-container {
       position: fixed;
@@ -52,190 +51,222 @@
     }
   }
 
-  .falcon-9__stat {
-    max-width: -moz-min-content;
-    max-width: min-content;
+  .falcon-9 {
+    &__stat {
+      max-width: -moz-min-content;
+      max-width: min-content;
+    }
   }
 
-  .falcon__btn-cnt {
-    margin: 50px 0 0;
+  .mission {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__falcon-img {
+      width: 105%;
+    }
   }
 
-  .mission__container {
-    flex-wrap: wrap;
-    justify-content: center;
+  .falcon {
+    &__btn-cnt {
+      margin: 50px 0 0;
+    }
+
+    &__info-container {
+      flex-direction: column;
+    }
+
+    &__img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__img {
+      right: 0;
+      left: 0px;
+      width: 150%;
+      height: auto;
+    }
+
+    &__overview {
+      padding-bottom: 70px;
+    }
   }
 
-  .mission__falcon-img {
-    width: 105%;
-  }
+  .engines {
+    &__left-half {
+      margin-bottom: 0;
+    }
 
-  .falcon__info-container {
-    flex-direction: column;
-  }
+    &__img-cnt {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      left: 0px;
+      right: 0;
+      padding-bottom: 50px;
+    }
 
-  .falcon__img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &__img {
+      position: relative;
+      width: 150%;
+    }
 
-  .falcon__img {
-    right: 0;
-    left: 0px;
-    width: 150%;
-    height: auto;
-  }
+    &__btn-cnt {
+      margin-left: 0;
+    }
 
-  .falcon__overview {
-    padding-bottom: 70px;
-  }
+    &__elm-img {
+      display: none;
+    }
 
-  .engines__left-half {
-    margin-bottom: 0;
-  }
+    &__adaptive {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
 
-  .engines__img-cnt {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 0px;
-    right: 0;
-    padding-bottom: 50px;
-  }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
 
-  .engines__img {
-    position: relative;
-    width: 150%;
-  }
+    &__text-img {
+      display: none;
+    }
 
-  .engines__btn-cnt {
-    margin-left: 0;
-  }
-
-  .engines__elm-img {
-    display: none;
-  }
-
-  .engines__adaptive {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .engines__text {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  .engines__text-img {
-    display: none;
-  }
-
-  .engines__elm {
-    width: 45%;
-    min-width: 205px;
-    margin: 0 auto;
+    &__elm {
+      width: 45%;
+      min-width: 205px;
+      margin: 0 auto;
+    }
   }
 }
 
 @media (max-width: 768px) {
 
-  .gallery__img-low2,
-  .gallery__img-low1,
-  .gallery__img-mid1,
-  .gallery__img-mid2 {
-    display: none;
+  .falcon-9 {
+    &__text-container {
+      width: 70%;
+    }
+
+    &__title {
+      font-size: 70px;
+      white-space: nowrap;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+    }
   }
 
-  .falcon-9__text-container {
-    width: 70%;
+  .falcon {
+    &__adaptive {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__a-container {
+      margin: 80px 40px 40px 40px;
+    }
   }
 
-  .falcon-9__title {
-    font-size: 70px;
-    white-space: nowrap;
+  .gallery {
+
+    &__img-low2,
+    &__img-low1,
+    &__img-mid1,
+    &__img-mid2 {
+      display: none;
+    }
+
+    &__elm {
+      width: 55px;
+      height: 55px;
+    }
+
+    .mission__info-title {
+      margin: 40px 0 30%;
+    }
   }
 
-  .falcon-9__subtitle {
-    font-size: 26px;
+  .mars {
+    &__title-cnt {
+      height: 600px;
+    }
+
+    &__contacts {
+      grid-template-columns: minmax(170px, 426px);
+      grid-template-rows: 1fr;
+    }
   }
 
-  .falcon__adaptive {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  .falcon__a-container {
-    margin: 80px 40px 40px 40px;
-  }
-
-  .gallery__elm {
-    width: 55px;
-    height: 55px;
-  }
-
-  .gallery .mission__info-title {
-    margin: 40px 0 30%;
-  }
-
-  .mars__title-cnt {
-    height: 600px;
-  }
-
-  .mars__contacts {
-    grid-template-columns: minmax(170px, 426px);
-    grid-template-rows: 1fr;
-  }
 }
 
 @media (max-width: 576px) {
-  .falcon-9__stat {
-    gap: 70px;
+  .falcon-9 {
+    &__stat {
+      gap: 70px;
+    }
   }
 
-  .gallery__elm {
-    width: 40px;
-    height: 40px;
+  .gallery {
+    &__elm {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__href {
+      margin-left: 42%;
+    }
   }
 
-  .gallery__href {
-    margin-left: 42%;
+  .falcon {
+    &__overview {
+      border: none;
+      padding: 0;
+    }
   }
 
-  .falcon__overview {
-    border: none;
-    padding: 0;
-  }
+
 }
 
 @media (max-width: 425px) {
-  .header__list {
-    gap: 18px;
+  .falcon-9 {
+    &__title {
+      font-size: 50px;
+    }
   }
 
-  .falcon-9__title {
-    font-size: 50px;
-  }
-
-  .mars__big-link {
-    padding-left: 15px;
+  .mars {
+    &__big-link {
+      padding-left: 15px;
+    }
   }
 }
 
 @media (max-width: 375px) {
-  .launches__card {
-    width: 110%;
+  .launches {
+    &__card {
+      width: 110%;
+    }
+
+    &__card-img {
+      width: 100%;
+    }
   }
 
-  .launches__card-img {
-    width: 100%;
+  .falcon {
+    &__text {
+      font-size: 16px;
+    }
   }
 
-  .falcon__text {
-    font-size: 16px;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
