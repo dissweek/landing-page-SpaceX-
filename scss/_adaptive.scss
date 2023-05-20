@@ -8,10 +8,28 @@
 
 @media (max-width: 992px) {
   .header {
+    padding: 20px 0 0;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #b2b3b3;
+
+    &__backgroung-half{
+      background-color: #030f1e85;
+      backdrop-filter: blur(15px);
+    }
+    
+    &__backgroung-full{
+      background-color: #030f1ed1;
+    }
+    
+    &__backgroung-black{
+      background-color: #000000d1;
+    }
+
     &__wrapper-container {
       position: fixed;
       top: 0;
-      right: 0px;
+      right: -1110px;
       z-index: 10;
       height: 100vh;
       padding: 110px 30px;
@@ -19,6 +37,10 @@
       justify-content: start;
       gap: 20px;
       background-color: aliceblue;
+    }
+
+    &__wrapper{
+      border: none;
     }
 
     &__nav {
@@ -52,6 +74,7 @@
   }
 
   .falcon-9 {
+    padding: 200px 0 110px;
     &__stat {
       max-width: -moz-min-content;
       max-width: min-content;

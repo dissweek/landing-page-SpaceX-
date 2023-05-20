@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-  padding: 65px 0px 20px;
+  padding: 35px 0px 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,13 +77,14 @@ body {
 }
 .header__btn {
   margin: 0;
-  padding: 0 30px;
+  padding: 0 28px;
   height: 22px;
   background: #545b78;
   border-radius: 0px 0px 0px 10px;
   filter: blur(0.5px);
   border: 1px solid;
   margin-left: 30px;
+  width: 103px;
   font-weight: 400;
   font-size: 13px;
   line-height: 100%;
@@ -94,7 +95,7 @@ body {
   background-image: url(../img/Back1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 288px 0 110px;
+  padding: 280px 0 110px;
 }
 .falcon-9__container {
   display: flex;
@@ -843,10 +844,27 @@ footer {
   }
 }
 @media (max-width: 992px) {
+  .header {
+    padding: 20px 0 0;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #b2b3b3;
+  }
+  .header__backgroung-half {
+    background-color: rgba(3, 15, 30, 0.5215686275);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+  }
+  .header__backgroung-full {
+    background-color: rgba(3, 15, 30, 0.8196078431);
+  }
+  .header__backgroung-black {
+    background-color: rgba(0, 0, 0, 0.8196078431);
+  }
   .header__wrapper-container {
     position: fixed;
     top: 0;
-    right: 0px;
+    right: -1110px;
     z-index: 10;
     height: 100vh;
     padding: 110px 30px;
@@ -854,6 +872,9 @@ footer {
     justify-content: start;
     gap: 20px;
     background-color: aliceblue;
+  }
+  .header__wrapper {
+    border: none;
   }
   .header__nav {
     text-align: center;
@@ -877,6 +898,9 @@ footer {
     position: fixed;
     right: 32px;
     z-index: 11;
+  }
+  .falcon-9 {
+    padding: 200px 0 110px;
   }
   .falcon-9__stat {
     max-width: -moz-min-content;

@@ -1,7 +1,7 @@
 @import "base";
 
 .header {
-  padding: 65px 0px 20px;
+  padding: 35px 0px 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +14,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #b2b3b3;
   }
+  
 
   &__burger-menu {
     position: relative;
@@ -62,13 +63,14 @@
 
   &__btn {
     margin: 0;
-    padding: 0 30px;
+    padding: 0 28px;
     height: 22px;
     background: #545b78;
     border-radius: 0px 0px 0px 10px;
     filter: blur(0.5px);
     border: 1px solid;
     margin-left: 30px;
+    width: 103px;
 
     font-weight: 400;
     font-size: 13px;
@@ -81,7 +83,7 @@
     background-image: url(../img/Back1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 288px 0 110px;
+    padding: 280px 0 110px;
 
   &__container {
     display: flex;
