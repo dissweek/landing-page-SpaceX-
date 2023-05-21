@@ -1,7 +1,5 @@
 let burgerBtn = document.querySelector(".header__burger-menu")
-let burgerMenuContainer = document.querySelector(".header__wrapper-container ")
-console.log(burgerMenuContainer)
-
+let burgerMenu= document.querySelector(".header__wrapper-container")
 
 let header = document.querySelector(".header")
 window.onscroll = ()=>{
@@ -24,4 +22,7 @@ window.onscroll = ()=>{
         header.classList.remove("header__backgroung-black")
     }
 }
-console.log(window.pageXOffset)
+
+burgerBtn.addEventListener("click",()=>{
+    burgerMenu.classList.toggle("burger-active")
+})

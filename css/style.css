@@ -870,14 +870,16 @@ footer {
   .header__wrapper-container {
     position: fixed;
     top: 0;
-    right: -1110px;
+    right: -1000px;
     z-index: 10;
     height: 100vh;
-    padding: 110px 30px;
+    padding: 65px 30px 0 15%;
     flex-direction: column-reverse;
     justify-content: start;
+    align-items: end;
     gap: 20px;
-    background-color: aliceblue;
+    background-color: rgb(24, 23, 23);
+    transition: all 0.5s;
   }
   .header__wrapper {
     border: none;
@@ -885,8 +887,10 @@ footer {
   .header__nav {
     text-align: center;
   }
-  .header__tn {
+  .header__btn {
     margin: 0;
+    padding: 0;
+    width: 70px;
     height: 22px;
   }
   .header__list {
@@ -898,12 +902,20 @@ footer {
   }
   .header__link {
     font-size: 20px;
+    color: rgba(133, 130, 130, 0.664);
+    transition: color 0.5s;
+  }
+  .header__link:hover {
+    color: rgba(252, 72, 72, 0.61);
   }
   .header__burger-menu {
     display: flex;
     position: fixed;
     right: 32px;
     z-index: 11;
+  }
+  .burger-active {
+    right: 0;
   }
   .falcon-9 {
     padding: 200px 0 110px;
