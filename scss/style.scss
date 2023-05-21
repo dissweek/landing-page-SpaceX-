@@ -362,7 +362,6 @@
     padding: 130px 50px 0 50px;
     border-left: 1px solid white;
     border-right: 1px solid white;
-    margin-right: 10px;
     position: relative;
     z-index: 4;
     padding-bottom: 220px;
@@ -427,10 +426,10 @@
   }
 
   &__img {
-    margin-top: 85px;
+
     height: 770px;
     position: relative;
-    right: 240px;
+    right: 300px;
   }
 
   &__btn-cnt {
@@ -480,6 +479,7 @@
 
   &__wrapper {
     position: relative;
+    display: flex;
   }
 
   &__left-half {
@@ -488,6 +488,10 @@
     display: flex;
     justify-content: start;
     margin-bottom: 100px;
+  }
+
+  &__left-cnt{
+    max-width: 100%;
   }
 
   &__title {
@@ -527,7 +531,7 @@
   }
 
   &__text {
-    max-width: 45%;
+    max-width: 85%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -571,20 +575,24 @@
   
   &__elm-img {
     position: absolute;
-    right: 50%;
+    left: 560px;
   }
 
   &__img-cnt {
-    position: absolute;
-    top: 191px;
-    right: -400px;
+    width: 50%;
+    position: relative;
+  }
+
+  &__img{
+    position: relative;
+    left: -640px;
+    top: 50px;
   }
 
   &__btn-cnt {
     position: relative;
     z-index: 2;
-    margin-left: 310px;
-    margin-top: 0;
+    margin: 120px 0 0 5px;
   }
 
   &__elm2, &__elm3, &__elm4{

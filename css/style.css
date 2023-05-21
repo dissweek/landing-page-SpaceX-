@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -341,7 +340,6 @@ body {
   padding: 130px 50px 0 50px;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  margin-right: 10px;
   position: relative;
   z-index: 4;
   padding-bottom: 220px;
@@ -397,10 +395,9 @@ body {
   margin-bottom: 80px;
 }
 .falcon__img {
-  margin-top: 85px;
   height: 770px;
   position: relative;
-  right: 240px;
+  right: 300px;
 }
 .falcon__btn-cnt {
   display: flex;
@@ -445,6 +442,7 @@ body {
 }
 .engines__wrapper {
   position: relative;
+  display: flex;
 }
 .engines__left-half {
   position: relative;
@@ -452,6 +450,9 @@ body {
   display: flex;
   justify-content: start;
   margin-bottom: 100px;
+}
+.engines__left-cnt {
+  max-width: 100%;
 }
 .engines__title {
   margin-bottom: 50px;
@@ -487,7 +488,7 @@ body {
   color: #ffffff;
 }
 .engines__text {
-  max-width: 45%;
+  max-width: 85%;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -525,18 +526,21 @@ body {
 }
 .engines__elm-img {
   position: absolute;
-  right: 50%;
+  left: 560px;
 }
 .engines__img-cnt {
-  position: absolute;
-  top: 191px;
-  right: -400px;
+  width: 50%;
+  position: relative;
+}
+.engines__img {
+  position: relative;
+  left: -640px;
+  top: 50px;
 }
 .engines__btn-cnt {
   position: relative;
   z-index: 2;
-  margin-left: 310px;
-  margin-top: 0;
+  margin: 120px 0 0 5px;
 }
 .engines__elm2, .engines__elm3, .engines__elm4 {
   width: 11px;
@@ -925,29 +929,33 @@ footer {
     align-items: center;
   }
   .falcon__img {
+    margin: 85px 0 0;
     right: 0;
-    left: 0px;
+    left: 11%;
     width: 150%;
     height: auto;
   }
   .falcon__overview {
     padding-bottom: 70px;
   }
+  .engines__wrapper {
+    flex-direction: column;
+  }
   .engines__left-half {
     margin-bottom: 0;
   }
   .engines__img-cnt {
-    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 0px;
-    right: 0;
-    padding-bottom: 50px;
   }
   .engines__img {
     position: relative;
+    left: -12%;
     width: 150%;
+    height: auto;
   }
   .engines__btn-cnt {
     margin-left: 0;
@@ -1020,9 +1028,22 @@ footer {
   .gallery__href {
     margin-left: 42%;
   }
+  .engines__img {
+    width: 200%;
+    left: -16%;
+  }
   .falcon__overview {
     border: none;
     padding: 0;
+  }
+  .falcon__overview-container {
+    margin: 0 auto;
+  }
+  .falcon__img {
+    right: 0;
+    left: 18%;
+    width: 250%;
+    height: auto;
   }
 }
 @media (max-width: 425px) {
