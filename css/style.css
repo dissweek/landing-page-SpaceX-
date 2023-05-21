@@ -414,9 +414,12 @@ body {
   letter-spacing: 0.12em;
   color: #777777;
   border: none;
+  width: 30px;
+  height: 30px;
 }
 .falcon__btn:active {
   color: white;
+  font-size: 28px;
 }
 
 .flight {
@@ -465,8 +468,7 @@ body {
 .engines__buttons {
   display: flex;
   justify-content: space-between;
-  width: 18%;
-  gap: 20px;
+  width: 220px;
   white-space: nowrap;
   padding: 0px;
   height: 36px;
@@ -476,7 +478,7 @@ body {
   font-family: "Jockey One";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 100%;
   letter-spacing: 0.12em;
   color: #919191;
@@ -484,7 +486,7 @@ body {
   border: none;
 }
 .engines__btn:active {
-  font-size: 24px;
+  font-size: 26px;
   color: #ffffff;
 }
 .engines__text {
@@ -956,9 +958,6 @@ footer {
     left: -12%;
     width: 150%;
     height: auto;
-  }
-  .engines__btn-cnt {
-    margin-left: 0;
   }
   .engines__elm-img {
     display: none;
