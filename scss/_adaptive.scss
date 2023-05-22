@@ -7,7 +7,6 @@
 }
 
 @media (max-width: 992px) {
-  
 
   .header {
     padding: 20px 0 0;
@@ -15,16 +14,16 @@
     z-index: 10;
     border-bottom: 1px solid #b2b3b3;
 
-    &__backgroung-half{
+    &__backgroung-half {
       background-color: #030f1e85;
       backdrop-filter: blur(15px);
     }
-    
-    &__backgroung-full{
+
+    &__backgroung-full {
       background-color: #030f1ed1;
     }
-    
-    &__backgroung-black{
+
+    &__backgroung-black {
       background-color: #000000d1;
     }
 
@@ -40,11 +39,10 @@
       align-items: end;
       gap: 20px;
       background-color: rgb(24, 23, 23);
-      transition: all 0.5s;
-
+      transition: all 0.5s 0s;
     }
 
-    &__wrapper{
+    &__wrapper {
       border: none;
     }
 
@@ -57,7 +55,6 @@
       padding: 0;
       width: 70px;
       height: 22px;
-
     }
 
     &__list {
@@ -73,25 +70,76 @@
       font-size: 20px;
       color: rgba(133, 130, 130, 0.664);
       transition: color 0.5s;
-      &:hover{
+
+      &:hover {
         color: rgba(252, 72, 72, 0.61);
       }
     }
 
+    &__burger-menu--span {
+      width: 100%;
+      height: 2px;
+      background-color: #b5b6b6;
+    }
+
+
+
     &__burger-menu {
       display: flex;
-      position: fixed;
-      right: 32px;
       z-index: 11;
+      position: relative;
+      width: 28px;
+      height: 20px;
+      background-color: #ffffff00;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      border: none;
+
+      &::before,&::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #b5b6b6;
+        position: absolute;
+        transition: all 0.5s ease-out 0s;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        left: 0;
+      }
+
+      &.active span {
+        transform: scale(0);
+      }
+
+      &.active::after {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+
+      &.active::before {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
     }
   }
-  .burger-active{
+
+  .burger-active {
     right: 0;
   }
 
 
   .falcon-9 {
     padding: 200px 0 110px;
+
     &__stat {
       max-width: -moz-min-content;
       max-width: min-content;
@@ -139,13 +187,13 @@
 
   .engines {
 
-    &__wrapper{
+    &__wrapper {
       flex-direction: column;
     }
 
-      &__left-half {
-        margin-bottom: 0;
-      }
+    &__left-half {
+      margin-bottom: 0;
+    }
 
     &__img-cnt {
       width: 100%;
@@ -158,8 +206,8 @@
     &__img {
       position: relative;
       left: -12%;
-      width:150%;
-      height:auto;
+      width: 150%;
+      height: auto;
     }
 
     &__elm-img {
@@ -268,8 +316,8 @@
     }
   }
 
-  .engines{
-    &__img{
+  .engines {
+    &__img {
       width: 200%;
       left: -16%;
     }
@@ -281,9 +329,10 @@
       padding: 0;
     }
 
-    &__overview-container{
+    &__overview-container {
       margin: 0 auto;
     }
+
     &__img {
       right: 0;
       left: 18%;
