@@ -1,6 +1,6 @@
-let burgerBtn = document.querySelector(".header__burger-menu")
-let burgerMenu= document.querySelector(".header__wrapper-container")
-let burgerMenuSpan= document.querySelectorAll(".header__burger-menu--span")
+const BURGER_BTN = document.querySelector(".header__burger-menu")
+const BURGER_MENU= document.querySelector(".header__wrapper-container")
+const BURGER_BG= document.querySelector(".background__null")
 
 let header = document.querySelector(".header")
 window.onscroll = ()=>{
@@ -24,7 +24,17 @@ window.onscroll = ()=>{
     }
 }
 
-burgerBtn.addEventListener("click",()=>{
-    burgerMenu.classList.toggle("burger-active")
-    burgerBtn.classList.toggle("active")
-})
+function burger(){
+    BURGER_MENU.classList.toggle("burger-active")
+    BURGER_BTN.classList.toggle("active")
+    BURGER_BG.classList.toggle("active")
+}
+
+// BURGER_BTN.addEventListener("click",()=>{
+//     BURGER_MENU.classList.toggle("burger-active")
+//     BURGER_BTN.classList.toggle("active")
+//     BURGER_BG.classList.toggle("active")
+// })
+BURGER_BTN.addEventListener("click",burger)
+BURGER_BG.addEventListener("click",burger)
+
