@@ -1,5 +1,7 @@
 @import "base";
-
+:hover,:active{
+  transition: color 0.3s;
+}
 .header {
   padding: 35px 0px 20px;
   position: absolute;
